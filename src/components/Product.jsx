@@ -24,7 +24,7 @@ function Product({ product }) {
 
   return (
     <Link
-      className="group card bg-base-300 shadow-sm"
+      className="group card bg-base-300 shadow-sm mb-10"
       to={`/product/${product.id}`}
     >
       <figure>
