@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <section className="bg-neutral">
+    <section className="bg-base-200">
       <footer className="footer main-container sm:footer-horizontal  text-neutral-content items-center p-4">
         <aside className="grid-flow-col items-center">
           <svg
