@@ -25,8 +25,15 @@ function Product() {
     <>
       {product && (
         <section>
-          <div className="main-container">
-            <h2 className="text-3xl">Product - {product.title}</h2>
+          <div className="main-container flex items-center gap-20">
+            <div>
+              <img src={product.thumbnail} alt="" />
+              <h2 className="text-3xl">{product.title}</h2>
+            </div>
+            <div w-200>
+              <p>{product.description}</p>
+              <b>Price: {product.price}</b>
+            </div>
           </div>
         </section>
       )}

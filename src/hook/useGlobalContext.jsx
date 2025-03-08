@@ -1,13 +1,11 @@
-import { GlobalContext } from "../context/GlobalContext";
 import { useContext } from "react";
+import { GlobalContext } from "../context/GlobalContext";
 
-export function useGlobalContext() {
+export function useGlobalContex() {
   const context = useContext(GlobalContext);
 
   if (!context) {
-    throw new Error(
-      "useGlobalContext() must be in the GlobalContextProvider()"
-    );
+    return "useGlobalContex() must be in the GlobalContextProvider()";
   }
 
   return context;
