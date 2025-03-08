@@ -1,7 +1,7 @@
-import { useGlobalContext } from "../hook/useGlobalContext";
 import { FaShoppingCart, FaMoon, FaSun } from "react-icons/fa";
 import { useTheme } from "../hook/useTheme";
 import { Link } from "react-router-dom";
+import { useGlobalContext } from "../hook/useGlobalContext";
 
 function Navbar() {
   const { totalAmount } = useGlobalContext();
